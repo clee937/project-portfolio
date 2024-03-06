@@ -1,0 +1,12 @@
+@use "./abstracts/variables";
+
+@use "./base/reset";
+@use "./layouts/_navigation";
+@use "./layouts/_header";
+@use "./layouts/_about-me";
+@use "./layouts/_technical-skills";
+@use "./layouts/_my-projects";
+@use "./layouts/_footer";
+
+@use "./components/_logo-panel";
+@use "./components/_project-card";

@@ -1,0 +1,30 @@
+@use "../abstracts/_variables" as *;
+
+.projects {
+  margin: 100px 0 50px 0;
+
+  .projects__heading {
+    padding: 20px;
+    text-align: center;
+    font-size: $mobile-sub-heading-font-size;
+    font-weight: $sub-heading-font-weight;
+    font-family: $primary-font;
+    color: $primary-color;
+  }
+
+  .projects__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .projects {
+    margin-bottom: 80px;
+
+    .projects__heading {
+      font-size: $desktop-sub-heading-font-size;
+    }
+  }
+}

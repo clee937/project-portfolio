@@ -1,0 +1,84 @@
+@use "../abstracts/_variables" as *;
+@use "./../base/_typography";
+
+.about-me {
+  padding: 20px;
+
+  &__heading {
+    font-family: $primary-font;
+    font-size: $mobile-sub-heading-font-size;
+    font-weight: $sub-heading-font-weight;
+    text-align: center;
+    padding: 0 20px 20px 20px;
+    color: $primary-color;
+  }
+}
+
+.about-me__image-container {
+  max-width: 260px;
+  margin: 0 auto;
+  padding: 20px 0;
+
+  .about-me__image {
+    width: 100%;
+  }
+}
+
+.about-me__desktop-heading {
+  display: none;
+}
+
+.about-me__paragraph {
+  font-family: $primary-font;
+  font-size: $mobile-paragraph-font-size;
+  line-height: $mobile-paragraph-line-height;
+  text-align: left;
+  padding: 15px 0;
+  color: $primary-color;
+
+  .about-me__nology {
+    font-weight: 700;
+  }
+}
+
+@media screen and (min-width: 370px) {
+  .about-me {
+    padding: 0 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-me {
+    padding: 0;
+    margin: 80px 0 100px 0;
+
+    &__heading {
+      display: none;
+    }
+
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .about-me__image-container {
+        margin: 0;
+      }
+
+      .about-me__text-container {
+        width: 68%;
+        margin-left: 60px;
+      }
+    }
+  }
+
+  .about-me__desktop-heading {
+    display: block;
+    font-family: $primary-font;
+    font-size: $desktop-sub-heading-font-size;
+    font-weight: $sub-heading-font-weight;
+    text-align: left;
+    padding-bottom: 20px;
+    color: $primary-color;
+  }
+}
