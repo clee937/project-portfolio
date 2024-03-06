@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -23,7 +23,7 @@ body {
     justify-content: space-between;
     align-items: center;
     font-size: 20px;
-    font-family: "Inter", arial, sans-serif;
+    font-family: "Barlow", arial, sans-serif;
     position: fixed;
     top: 0;
     left: 5%;
@@ -72,7 +72,7 @@ body {
     border-radius: 7px;
     color: #121212;
     padding: 10px 20px 10px 20px;
-    font-family: "Inter", arial, sans-serif;
+    font-family: "Barlow", arial, sans-serif;
     font-size: 18px;
     font-weight: 700;
     box-shadow: 0 5px 5px 0 rgba(29, 29, 29, 0.2);
@@ -91,7 +91,7 @@ body {
 }
 
 .header__text-container {
-  font-family: "Inter", arial, sans-serif;
+  font-family: "Barlow", arial, sans-serif;
   color: #121212;
 }
 .header__text-container .header__intro {
@@ -142,7 +142,7 @@ body {
   padding: 20px;
 }
 .about-me__heading {
-  font-family: "Inter", arial, sans-serif;
+  font-family: "Barlow", arial, sans-serif;
   font-size: 26px;
   font-weight: 600;
   text-align: center;
@@ -164,7 +164,7 @@ body {
 }
 
 .about-me__paragraph {
-  font-family: "Inter", arial, sans-serif;
+  font-family: "Barlow", arial, sans-serif;
   font-size: 1rem;
   line-height: 1.75rem;
   text-align: left;
@@ -202,7 +202,7 @@ body {
   }
   .about-me__desktop-heading {
     display: block;
-    font-family: "Inter", arial, sans-serif;
+    font-family: "Barlow", arial, sans-serif;
     font-size: 28px;
     font-weight: 600;
     text-align: left;
@@ -215,7 +215,7 @@ body {
   margin: 100px 0;
 }
 .technical-skills__heading {
-  font-family: "Inter", arial, sans-serif;
+  font-family: "Barlow", arial, sans-serif;
   font-size: 26px;
   font-weight: 600;
   text-align: center;
@@ -223,7 +223,7 @@ body {
   color: #121212;
 }
 .technical-skills__paragraph {
-  font-family: "Inter", arial, sans-serif;
+  font-family: "Barlow", arial, sans-serif;
   line-height: 1.75rem;
   text-align: center;
   padding: 10px 20px;
@@ -250,7 +250,7 @@ body {
   text-align: center;
   font-size: 26px;
   font-weight: 600;
-  font-family: "Inter", arial, sans-serif;
+  font-family: "Barlow", arial, sans-serif;
   color: #121212;
 }
 .projects .projects__container {
@@ -284,7 +284,7 @@ body {
 .footer__email {
   color: #ffffff;
   text-decoration: none;
-  font-family: "Inter", arial, sans-serif;
+  font-family: "Barlow", arial, sans-serif;
   font-weight: 400;
 }
 
@@ -306,7 +306,7 @@ body {
 }
 .technical-skills .technical-skills__logo-text {
   color: #121212;
-  font-family: "Inter", arial, sans-serif;
+  font-family: "Barlow", arial, sans-serif;
   font-size: 1rem;
   line-height: 1.75rem;
   padding: 10px 0;
@@ -386,7 +386,7 @@ body {
 .projects__card {
   background-color: inherit;
   color: #121212;
-  font-family: "Inter", arial, sans-serif;
+  font-family: "Barlow", arial, sans-serif;
   font-size: 1rem;
   display: flex;
   flex-wrap: wrap;
@@ -429,7 +429,7 @@ body {
   border-radius: 7px;
   color: #121212;
   cursor: pointer;
-  font-family: "Inter", arial, sans-serif;
+  font-family: "Barlow", arial, sans-serif;
   font-size: 1rem;
   font-weight: 700;
   padding: 10px;
