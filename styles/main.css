@@ -322,8 +322,38 @@ body {
 .technical-skills .technical-skills__logo-text {
   padding: 10px;
 }
+.technical-skills .technical-skills__logo path {
+  fill: #121212;
+}
 .technical-skills .technical-skills__logo--git:hover path {
   fill: #e94d31;
+}
+.technical-skills .technical-skills__logo--bem:hover path {
+  fill: #090909;
+}
+.technical-skills .technical-skills__logo--html:hover path {
+  fill: #e95d2c;
+}
+.technical-skills .technical-skills__logo--css:hover path {
+  fill: #3e9dd7;
+}
+.technical-skills .technical-skills__logo--javascript:hover path {
+  fill: #f7d33e;
+}
+.technical-skills .technical-skills__logo--bem:hover path {
+  fill: #090909;
+}
+.technical-skills .technical-skills__logo--scss:hover path {
+  fill: #cf679a;
+}
+.technical-skills .technical-skills__logo--react:hover path {
+  fill: #01d2f7;
+}
+.technical-skills .technical-skills__logo--java:hover path {
+  fill: #537c98;
+}
+.technical-skills .technical-skills__logo--spring-boot:hover path {
+  fill: #64bb39;
 }
 
 @media screen and (min-width: 370px) {
