@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
-  <body id="home">
+  <body>
     <!-- Navigation -->
-    <nav class="navigation" id="home">
-      <a href="#home" class="navigation__logo">Cheryl Lee</a>
+    <nav class="navigation">
+      <a href="#home" class="navigation__logo">CherylLee</a>
       <ul class="navigation__link-container">
         <li class="navigation__list-item">
           <a href="#home" class="navigation__link navigation__link--home"
@@ -36,54 +37,19 @@
     </nav>
 
     <!-- Header -->
-    <header class="header">
+    <header class="header" id="home">
       <div class="header__text-container">
         <p class="header__intro">👋 Hey, I'm Cheryl</p>
         <h1 class="header__heading">
-          A Junior Software Developer based in the&nbspUK.
+          A Junior Software Developer based in the&nbsp;UK.
         </h1>
       </div>
       <div class="header__image-container">
-        <img
-          src="./assets/header-image.png"
-          alt="cartoon"
-          class="header__image"
-        />
+        <img src="./assets/developer.png" alt="cartoon" class="header__image" />
       </div>
     </header>
 
     <main class="main-container">
-      <!-- About me -->
-      <section class="about-me" id="about">
-        <h2 class="about-me__heading">About Me</h2>
-        <div class="about-me__container">
-          <div class="about-me__image-container">
-            <img
-              class="about-me__image"
-              src="assets/profile.jpg"
-              alt="profile picture"
-            />
-          </div>
-          <div class="about-me__text-container">
-            <h2 class="about-me__desktop-heading">About Me</h2>
-            <p class="about-me__paragraph">
-              Nulla ac praesent tempor, orci sit nunc eget. Aliquam urna nunc,
-              viverra sed tortor non. Id at pellentesque mauris at tincidunt
-              venenatis urna mus. Sodales pretium tempus tincidunt tellus in
-              imperdiet. Id at pellentesque mauris at tincidunt venenatis urna
-              mus.
-            </p>
-            <p class="about-me__paragraph">
-              Nulla ac praesent tempor, orci sit nunc eget. Aliquam urna nunc,
-              viverra sed tortor non. Id at pellentesque mauris at tincidunt
-              venenatis urna mus. Sodales pretium tempus tincidunt tellus in
-              imperdiet. Id at pellentesque mauris at tincidunt venenatis urna
-              mus.
-            </p>
-          </div>
-        </div>
-      </section>
-
       <!-- Technical Skills -->
       <section class="technical-skills">
         <h2 class="technical-skills__heading">Technical Skills</h2>
@@ -267,31 +233,31 @@
                 </clipPath>
               </defs>
             </svg>
-            <p class="technical-skills__logo-text">Git</p>
+            <p class="technical-skills__logo-text" id="my-projects">Git</p>
           </div>
         </div>
       </section>
 
       <!-- My projects -->
-      <section class="projects" id="my-projects">
+      <section class="projects">
         <h2 class="projects__heading">My Projects</h2>
         <div class="projects__container">
           <div class="projects__card">
-            <a href="https://www.github.com/" target="_blank"
+            <a href="https://clee937.github.io/calculator/" target="_blank"
               ><img
                 class="projects__image"
-                src="./assets/project.jpg"
+                src="./assets/calculator.png"
                 alt="project image"
             /></a>
             <div class="projects__body">
-              <p class="projects__language">React</p>
-              <h3 class="projects__card-heading">Client Project</h3>
+              <p class="projects__language">HTML, CSS/SCSS, TypeScript</p>
+              <h3 class="projects__card-heading">Calculator</h3>
               <p class="projects__description">
-                Maecenas accumsan tincidunt id et in ut diam sit. Metus, nec,
-                augue urna gravida nisl, tortor sapien nec sollicitudin.
+                A simple calculator web app for performing basic mathematical
+                operations.
               </p>
               <div class="projects__buttons">
-                <a href="https://www.github.com/" target="_blank"
+                <a href="https://github.com/clee937/calculator" target="_blank"
                   ><button class="projects__button" type="button">
                     Code&nbsp;
                     <svg
@@ -307,7 +273,7 @@
                       />
                     </svg></button
                 ></a>
-                <a href="https://www.github.com/" target="_blank"
+                <a href="https://clee937.github.io/calculator/" target="_blank"
                   ><button
                     class="projects__button projects__button--preview"
                     type="button"
@@ -330,21 +296,25 @@
           </div>
 
           <div class="projects__card">
-            <a href="https://www.github.com/" target="_blank"
+            <a
+              href="https://clee937.github.io/card-matching-memory-game/"
+              target="_blank"
               ><img
                 class="projects__image"
-                src="./assets/project.jpg"
+                src="./assets/browser-game.png"
                 alt="project image"
             /></a>
             <div class="projects__body">
-              <p class="projects__language">React</p>
-              <h3 class="projects__card-heading">Client Project</h3>
+              <p class="projects__language">HTML, CSS/SCSS, TypeScript</p>
+              <h3 class="projects__card-heading">Browser-based game</h3>
               <p class="projects__description">
-                Maecenas accumsan tincidunt id et in ut diam sit. Metus, nec,
-                augue urna gravida nisl, tortor sapien nec sollicitudin.
+                A browser-based game to test memory skills. Functionality built
+                with TypeScript.
               </p>
               <div class="projects__buttons">
-                <a href="https://www.github.com/" target="_blank"
+                <a
+                  href="https://github.com/clee937/card-matching-memory-game"
+                  target="_blank"
                   ><button class="projects__button" type="button">
                     Code&nbsp;
                     <svg
@@ -360,7 +330,9 @@
                       />
                     </svg></button
                 ></a>
-                <a href="https://www.github.com/" target="_blank"
+                <a
+                  href="https://clee937.github.io/card-matching-memory-game/"
+                  target="_blank"
                   ><button
                     class="projects__button projects__button--preview"
                     type="button"
@@ -383,21 +355,25 @@
           </div>
 
           <div class="projects__card">
-            <a href="https://www.github.com/" target="_blank"
+            <a
+              href="https://clee937.github.io/react-ticket-tracker/"
+              target="_blank"
               ><img
                 class="projects__image"
-                src="./assets/project.jpg"
+                src="./assets/ticket-tracker.png"
                 alt="project image"
             /></a>
             <div class="projects__body">
               <p class="projects__language">React</p>
-              <h3 class="projects__card-heading">Client Project</h3>
+              <h3 class="projects__card-heading">Ticket Tracker</h3>
               <p class="projects__description">
-                Maecenas accumsan tincidunt id et in ut diam sit. Metus, nec,
-                augue urna gravida nisl, tortor sapien nec sollicitudin.
+                A mobile-responsive ticket tracker app for tracking employee
+                workload.
               </p>
               <div class="projects__buttons">
-                <a href="https://www.github.com/" target="_blank"
+                <a
+                  href="https://github.com/clee937/react-ticket-tracker"
+                  target="_blank"
                   ><button class="projects__button" type="button">
                     Code&nbsp;
                     <svg
@@ -413,7 +389,9 @@
                       />
                     </svg></button
                 ></a>
-                <a href="https://www.github.com/" target="_blank"
+                <a
+                  href="https://clee937.github.io/react-ticket-tracker/"
+                  target="_blank"
                   ><button
                     class="projects__button projects__button--preview"
                     type="button"
@@ -436,21 +414,22 @@
           </div>
 
           <div class="projects__card">
-            <a href="https://www.github.com/" target="_blank"
-              ><img
-                class="projects__image"
-                src="./assets/project.jpg"
-                alt="project image"
-            /></a>
+            <img
+              class="projects__image"
+              src="./assets/punk-api.png"
+              alt="project image"
+            />
             <div class="projects__body">
               <p class="projects__language">React</p>
-              <h3 class="projects__card-heading">Client Project</h3>
+              <h3 class="projects__card-heading">Punk API</h3>
               <p class="projects__description">
-                Maecenas accumsan tincidunt id et in ut diam sit. Metus, nec,
-                augue urna gravida nisl, tortor sapien nec sollicitudin.
+                A web app that pulls data from a public API, allowing users to
+                view and filter beer info.
               </p>
               <div class="projects__buttons">
-                <a href="https://www.github.com/" target="_blank"
+                <a
+                  href="https://github.com/clee937/react-project-punk-api"
+                  target="_blank"
                   ><button class="projects__button" type="button">
                     Code&nbsp;
                     <svg
@@ -466,7 +445,9 @@
                       />
                     </svg></button
                 ></a>
-                <a href="https://www.github.com/" target="_blank"
+                <a
+                  href="https://github.com/clee937/react-project-punk-api"
+                  target="_blank"
                   ><button
                     class="projects__button projects__button--preview"
                     type="button"
@@ -489,21 +470,23 @@
           </div>
 
           <div class="projects__card">
-            <a href="https://www.github.com/" target="_blank"
-              ><img
-                class="projects__image"
-                src="./assets/project.jpg"
-                alt="project image"
-            /></a>
+            <img
+              class="projects__image"
+              src="./assets/wov.png"
+              alt="project image"
+            />
+
             <div class="projects__body">
               <p class="projects__language">React</p>
-              <h3 class="projects__card-heading">Client Project</h3>
+              <h3 class="projects__card-heading">Client Project - WOV</h3>
               <p class="projects__description">
-                Maecenas accumsan tincidunt id et in ut diam sit. Metus, nec,
-                augue urna gravida nisl, tortor sapien nec sollicitudin.
+                A team built React app for Way of the Viking. For users to keep
+                track of personal tasks.
               </p>
               <div class="projects__buttons">
-                <a href="https://www.github.com/" target="_blank"
+                <a
+                  href="https://github.com/nology-tech/wov-client-project"
+                  target="_blank"
                   ><button class="projects__button" type="button">
                     Code&nbsp;
                     <svg
@@ -519,7 +502,9 @@
                       />
                     </svg></button
                 ></a>
-                <a href="https://www.github.com/" target="_blank"
+                <a
+                  href="https://github.com/nology-tech/wov-client-project"
+                  target="_blank"
                   ><button
                     class="projects__button projects__button--preview"
                     type="button"
@@ -542,21 +527,20 @@
           </div>
 
           <div class="projects__card">
-            <a href="https://www.github.com/" target="_blank"
-              ><img
-                class="projects__image"
-                src="./assets/project.jpg"
-                alt="project image"
-            /></a>
+            <img
+              class="projects__image"
+              src="./assets/hangman.png"
+              alt="project image"
+            />
             <div class="projects__body">
-              <p class="projects__language">React</p>
-              <h3 class="projects__card-heading">Client Project</h3>
+              <p class="projects__language">Java</p>
+              <h3 class="projects__card-heading">CLI Hangman</h3>
               <p class="projects__description">
-                Maecenas accumsan tincidunt id et in ut diam sit. Metus, nec,
-                augue urna gravida nisl, tortor sapien nec sollicitudin.
+                An OOP application of the classic Hangman game that runs in the
+                console.
               </p>
               <div class="projects__buttons">
-                <a href="https://www.github.com/" target="_blank"
+                <a href="https://github.com/clee937/hangman" target="_blank"
                   ><button class="projects__button" type="button">
                     Code&nbsp;
                     <svg
@@ -572,7 +556,7 @@
                       />
                     </svg></button
                 ></a>
-                <a href="https://www.github.com/" target="_blank"
+                <a href="https://github.com/clee937/hangman" target="_blank"
                   ><button
                     class="projects__button projects__button--preview"
                     type="button"
@@ -592,6 +576,35 @@
                 ></a>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About me -->
+      <section class="about-me" id="about">
+        <h2 class="about-me__heading">About Me</h2>
+        <div class="about-me__container">
+          <div class="about-me__image-container">
+            <img
+              class="about-me__image"
+              src="assets/profile.png"
+              alt="profile picture"
+            />
+          </div>
+          <div class="about-me__text-container">
+            <h2 class="about-me__desktop-heading">About Me</h2>
+            <p class="about-me__paragraph">
+              Hi, I'm Cheryl. I enjoy building things with code. Growing up, I
+              was always drawn to puzzles and games that required logical
+              thinking, and would often return from library visits with stacks
+              of brainteaser books.
+            </p>
+            <p class="about-me__paragraph">
+              I am currently undertaking _nology's full stack development
+              course, building a skillset in a wide range of languages and
+              tools. When I'm not coding, I enjoy being active and going to
+              classes at the&nbsp;gym.
+            </p>
           </div>
         </div>
       </section>
@@ -599,7 +612,7 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="footer__logos">
+      <div class="footer__container">
         <svg
           class="footer__logo--github"
           width="45"
@@ -608,7 +621,7 @@
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <a href="https://www.github.com/" target="_blank">
+          <a href="https://github.com/clee937" target="_blank">
             <rect width="45" height="45" rx="22.5" fill="white" />
             <g clip-path="url(#clip0_3552_680)">
               <title>Github</title>
@@ -630,58 +643,10 @@
             </defs>
           </a>
         </svg>
-
-        <svg
-          class="footer__logo--linkedin"
-          width="45"
-          height="45"
-          viewBox="0 0 45 45"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
+        <a class="footer__email" href="mailto:clee0937@gmail.com"
+          >clee0937@gmail.com</a
         >
-          <title>LinkedIn</title>
-          <a href="https://uk.linkedin.com/" target="_blank">
-            <rect width="45" height="45" rx="22.5" fill="white" />
-            <g clip-path="url(#clip0_3552_676)">
-              <path
-                d="M17.5016 31.7309H13.3153V18.2496H17.5016V31.7309ZM15.406 16.4107C14.0675 16.4107 12.9814 15.3016 12.9814 13.9631C12.9814 13.3201 13.2369 12.7034 13.6916 12.2487C14.1463 11.794 14.7629 11.5386 15.406 11.5386C16.049 11.5386 16.6657 11.794 17.1204 12.2487C17.575 12.7034 17.8305 13.3201 17.8305 13.9631C17.8305 15.3016 16.7444 16.4107 15.406 16.4107ZM33.1694 31.7309H28.9925V25.1684C28.9925 23.6042 28.9608 21.5987 26.8161 21.5987C24.6396 21.5987 24.3057 23.2977 24.3057 25.0559V31.7309H20.1238V18.2496H24.1384V20.0886H24.1968C24.7557 19.0292 26.1209 17.9114 28.1574 17.9114C32.3942 17.9114 33.173 20.7016 33.173 24.3254V31.7309H33.1694Z"
-                fill="black"
-              />
-            </g>
-            <defs>
-              <clipPath id="clip0_3552_676">
-                <rect
-                  width="23.0769"
-                  height="23.0769"
-                  fill="white"
-                  transform="translate(11.5391 11.5386)"
-                />
-              </clipPath>
-            </defs>
-          </a>
-        </svg>
-
-        <svg
-          class="footer__logo--cv"
-          width="45"
-          height="45"
-          viewBox="0 0 45 45"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <title>CV</title>
-          <a href="https://www.github.com/" target="_blank">
-            <rect width="45" height="45" rx="22.5" fill="white" />
-            <path
-              d="M22.6803 26.3901C22.2215 27.1112 21.7813 27.8167 20.7949 28.502C20.2673 28.8719 19.0528 29.5945 17.3266 29.5945C14.0332 29.5945 11.375 27.2001 11.375 22.9906C11.375 19.3115 13.8755 16.4053 17.3968 16.4053C18.8234 16.4053 20.0909 16.8984 21.0244 17.6383C21.8875 18.325 22.2918 19.0119 22.6445 19.6284L20.1798 20.8599C20.0035 20.4556 19.7912 20.0326 19.2464 19.5753C18.6471 19.0993 18.0492 18.9588 17.5373 18.9588C15.5301 18.9588 14.4734 20.8256 14.4734 22.9031C14.4734 25.633 15.8656 26.9879 17.5373 26.9879C19.1575 26.9879 19.8098 25.8609 20.2314 25.1398L22.6803 26.3901V26.3901ZM31.3144 16.7924H34.625L30.3108 29.2246H27.1422L22.881 16.7924H26.1916L28.7623 25.633L31.3144 16.7924Z"
-              fill="black"
-            />
-          </a>
-        </svg>
       </div>
-      <a class="footer__email" href="mailto:clee0937@gmail.com"
-        >clee0937@gmail.com</a
-      >
     </footer>
     <script src="./main.js"></script>
   </body>

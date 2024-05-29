@@ -2,29 +2,43 @@
 @use "./../base/_typography";
 
 .header {
-  padding: 0 40px 0 40px;
-  margin: 30px 0 50px 0;
+  padding: 5px 15px 5px 15px;
+  margin: 10px 10px 10px 10px;
+  align-items: center;
+  justify-content: center;
 
   &__image-container {
-    display: none;
+    padding: 0 40px 0 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      transform: scale(1.01);
+    }
   }
-}
 
-.header__text-container {
-  font-family: $primary-font;
-  color: $primary-color;
+  &__image {
+    width: 300px;
+  }
 
-  .header__intro {
+  &__text-container {
+    font-family: $primary-font;
+    color: $primary-color;
+  }
+
+  &__intro {
     font-size: 22px;
     font-weight: 500;
     padding: 20px 20px 20px 0;
     text-shadow: 1.5px 1.5px 1.5px rgb(188, 188, 188);
   }
 
-  .header__heading {
+  &__heading {
     font-size: 46px;
     line-height: 54px;
-    padding: 20px 20px 20px 0;
+    padding: 20px 20px 0 0;
     text-shadow: 1.5px 1.5px 1.5px rgb(188, 188, 188);
   }
 }
@@ -39,30 +53,22 @@
   .header {
     display: flex;
     align-items: center;
-    margin: 145px 0 80px 0;
-    padding: 20px;
+    margin: 120px 30px 94px 40px;
+    padding: 30px 20px;
 
-    .header__heading {
+    &__heading {
       font-weight: 600;
       line-height: 60px;
+      padding: 20px 0 20px 20px;
     }
 
-    .header__intro {
+    &__intro {
       font-size: 24px;
+      padding: 20px 0 20px 20px;
     }
 
-    &__image-container {
-      display: block;
-
-      .header__image {
-        width: 360px;
-        z-index: 0;
-        transition: all 0.5s ease-in;
-
-        &:hover {
-          transform: scale(-1, 0.9);
-        }
-      }
+    &__image {
+      width: auto;
     }
   }
 }

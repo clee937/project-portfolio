@@ -2,17 +2,15 @@
 
 .footer {
   background-color: $primary-color;
-  padding: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 40px;
 
-  &__logos {
+  &__container {
+    min-width: 240px;
+    max-width: 240px;
     display: flex;
     justify-content: space-between;
-    margin: 0 30px 35px 30px;
-    width: 156px;
+    align-items: center;
+    margin: 0 auto;
   }
 
   &__email {
@@ -25,12 +23,10 @@
 
 @media screen and (min-width: 768px) {
   .footer {
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
+    padding: 50px;
 
-    &__logos {
-      margin-bottom: 20px;
+    &__container {
+      margin: 0;
     }
   }
 }

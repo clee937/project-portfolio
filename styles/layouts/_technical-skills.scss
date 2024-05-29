@@ -2,12 +2,10 @@
 
 .technical-skills {
   padding: 0 15px;
-  margin: 100px 0;
+  font-family: $primary-font;
 
   &__heading {
-    font-family: $primary-font;
     font-size: $mobile-sub-heading-font-size;
-
     font-weight: $sub-heading-font-weight;
     text-align: center;
     padding: 30px;
@@ -15,19 +13,14 @@
   }
 
   &__paragraph {
-    font-family: $primary-font;
     line-height: $mobile-paragraph-line-height;
     text-align: center;
-    padding: 10px 20px;
+    padding: 10px 15px 30px 15px;
     color: $primary-color;
   }
 }
 
 @media screen and (min-width: 768px) {
-  body {
-    padding: 30px 60px;
-  }
-
   .technical-skills {
     &__heading {
       font-size: $desktop-sub-heading-font-size;

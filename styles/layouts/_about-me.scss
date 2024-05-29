@@ -2,7 +2,9 @@
 @use "./../base/_typography";
 
 .about-me {
-  padding: 20px;
+  padding: 40px;
+  margin: 30px auto;
+  max-width: 2100px;
 
   &__heading {
     font-family: $primary-font;
@@ -12,32 +14,30 @@
     padding: 0 20px 20px 20px;
     color: $primary-color;
   }
-}
 
-.about-me__image-container {
-  max-width: 260px;
-  margin: 0 auto;
-  padding: 20px 0;
+  &__desktop-heading {
+    display: none;
+  }
 
-  .about-me__image {
+  &__paragraph {
+    font-family: $primary-font;
+    font-size: $mobile-paragraph-font-size;
+    line-height: $mobile-paragraph-line-height;
+    text-align: left;
+    padding: 15px 0;
+    color: $primary-color;
+  }
+
+  &__image-container {
+    max-width: 220px;
+    min-width: 220px;
+    margin: 0 auto;
+    padding: 20px 0;
     width: 100%;
   }
-}
 
-.about-me__desktop-heading {
-  display: none;
-}
-
-.about-me__paragraph {
-  font-family: $primary-font;
-  font-size: $mobile-paragraph-font-size;
-  line-height: $mobile-paragraph-line-height;
-  text-align: left;
-  padding: 15px 0;
-  color: $primary-color;
-
-  .about-me__nology {
-    font-weight: 700;
+  &__image {
+    width: 100%;
   }
 }
 
@@ -49,8 +49,8 @@
 
 @media screen and (min-width: 768px) {
   .about-me {
-    padding: 0;
-    margin: 80px 0 100px 0;
+    padding: 0 80px;
+    margin: 80px auto 100px auto;
 
     &__heading {
       display: none;
@@ -60,25 +60,25 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-
-      .about-me__image-container {
-        margin: 0;
-      }
-
-      .about-me__text-container {
-        width: 68%;
-        margin-left: 60px;
-      }
     }
-  }
 
-  .about-me__desktop-heading {
-    display: block;
-    font-family: $primary-font;
-    font-size: $desktop-sub-heading-font-size;
-    font-weight: $sub-heading-font-weight;
-    text-align: left;
-    padding-bottom: 20px;
-    color: $primary-color;
+    &__image-container {
+      margin: 0;
+      width: 100%;
+    }
+
+    &__text-container {
+      margin-left: 80px;
+    }
+
+    &__desktop-heading {
+      display: block;
+      font-family: $primary-font;
+      font-size: $desktop-sub-heading-font-size;
+      font-weight: $sub-heading-font-weight;
+      text-align: left;
+      padding-bottom: 20px;
+      color: $primary-color;
+    }
   }
 }

@@ -1,21 +1,13 @@
 @use "../abstracts/_variables" as *;
-@use "./../base/_typography";
+@use "../base/_typography";
 
 .technical-skills {
-  .technical-skills__logo-container {
+  &__logo-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 3px;
-    margin: 20px 0 20px 0;
-  }
-
-  .technical-skills__logo-text {
-    color: $primary-color;
-    font-family: $primary-font;
-    font-size: $mobile-paragraph-font-size;
-    line-height: $mobile-paragraph-line-height;
-    padding: 10px 0;
-    text-align: center;
+    justify-content: center;
+    margin: 20px auto;
   }
 
   &__logo-and-text-container {
@@ -26,73 +18,18 @@
     width: auto;
   }
 
-  .technical-skills__logo-text {
-    padding: 10px;
+  &__logo-text {
+    color: $primary-color;
+    font-family: $primary-font;
+    font-size: $mobile-paragraph-font-size;
+    line-height: $mobile-paragraph-line-height;
+    padding: 10px 0;
+    text-align: center;
   }
 
-  .technical-skills__logo {
+  &__logo {
     path {
       fill: $primary-color;
-    }
-  }
-
-  .technical-skills__logo--git:hover {
-    path {
-      fill: #e94d31;
-    }
-  }
-
-  .technical-skills__logo--bem:hover {
-    path {
-      fill: #090909;
-    }
-  }
-
-  .technical-skills__logo--html:hover {
-    path {
-      fill: #e95d2c;
-    }
-  }
-
-  .technical-skills__logo--css:hover {
-    path {
-      fill: #3e9dd7;
-    }
-  }
-
-  .technical-skills__logo--javascript:hover {
-    path {
-      fill: #f7d33e;
-    }
-  }
-
-  .technical-skills__logo--bem:hover {
-    path {
-      fill: #090909;
-    }
-  }
-
-  .technical-skills__logo--scss:hover {
-    path {
-      fill: #cf679a;
-    }
-  }
-
-  .technical-skills__logo--react:hover {
-    path {
-      fill: #01d2f7;
-    }
-  }
-
-  .technical-skills__logo--java:hover {
-    path {
-      fill: #537c98;
-    }
-  }
-
-  .technical-skills__logo--spring-boot:hover {
-    path {
-      fill: #64bb39;
     }
   }
 }
@@ -100,31 +37,21 @@
 @media screen and (min-width: 370px) {
   .technical-skills {
     padding: 0 40px;
-    .technical-skills__logo-container {
-      gap: 10px;
+    &__logo-container {
+      gap: 15px;
     }
   }
 }
 
 @media screen and (min-width: 900px) {
   .technical-skills {
-    padding: 0 120px;
-
-    .technical-skills__logo-container {
+    &__logo-container {
       display: flex;
       flex-direction: row-reverse;
       justify-content: space-evenly;
       align-items: baseline;
-      padding: 0 120px;
-
-      &__logo-and-text-container {
-        padding-top: 20px;
-        margin: 10px;
-      }
-
-      .technical-skills__logo-text {
-        padding: 15px;
-      }
+      max-width: 1080px;
+      margin: 20px auto;
     }
   }
 }
